@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "additional_enchanments_and_trade",
+  "version": "${version}",
+  "name": "Additional Enchanments and Trade",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/additional_enchanments_and_trade/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.github.trungkien14.additional_enchanments_and_trade.client.Additional_enchanments_and_tradeDataGenerator"
+    ],
+    "client": [
+      "com.github.trungkien14.additional_enchanments_and_trade.client.Additional_enchanments_and_tradeClient"
+    ],
+    "main": [
+      "com.github.trungkien14.additional_enchanments_and_trade.Additional_enchanments_and_trade"
+    ]
+  },
+  "mixins": [
+    "additional_enchanments_and_trade.mixins.json",
+    {
+      "config": "additional_enchanments_and_trade.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
