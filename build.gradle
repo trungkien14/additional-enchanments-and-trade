@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.17-SNAPSHOT'
+    id 'fabric-loom' version '1.7.4'
     id 'maven-publish'
 }
 
@@ -21,10 +21,9 @@ loom {
     }
 }
 
+// SỬA TẠI ĐÂY: Sử dụng đúng cú pháp Data Generation của Fabric bản mới
 fabricApi {
-    configureDataGeneration {
-        client = true
-    }
+    configureDataGeneration()
 }
 
 repositories {

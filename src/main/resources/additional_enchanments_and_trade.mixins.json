@@ -4,6 +4,7 @@
   "package": "com.github.trungkien14.additional_enchanments_and_trade.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "AttackMixing"
   ],
   "injectors": {
     "defaultRequire": 1
