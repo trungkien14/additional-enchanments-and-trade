@@ -14,7 +14,7 @@ loom {
     splitEnvironmentSourceSets()
 
     mods {
-        "additional_enchanments_and_trade" {
+        "additional_enchantments_and_trade" {
             sourceSet sourceSets.main
             sourceSet sourceSets.client
         }

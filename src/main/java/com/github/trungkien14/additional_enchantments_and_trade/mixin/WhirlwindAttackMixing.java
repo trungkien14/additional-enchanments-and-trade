@@ -1,7 +1,7 @@
-package com.github.trungkien14.additional_enchanments_and_trade.mixin;
+package com.github.trungkien14.additional_enchantments_and_trade.mixin;
 
-import com.github.trungkien14.additional_enchanments_and_trade.util.whirlwind.WhirlwindDamage;
-import com.github.trungkien14.additional_enchanments_and_trade.util.whirlwind.WhirlwindEffect;
+import com.github.trungkien14.additional_enchantments_and_trade.util.spear.whirlwind.WhirlwindDamage;
+import com.github.trungkien14.additional_enchantments_and_trade.util.spear.whirlwind.WhirlwindEffect;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -10,10 +10,10 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import com.github.trungkien14.additional_enchanments_and_trade.enchantment.ModEnchantments;
+import com.github.trungkien14.additional_enchantments_and_trade.enchantment.ModEnchantments;
 
 @Mixin(PlayerEntity.class)
-public abstract class AttackMixing {
+public abstract class WhirlwindAttackMixing {
 
     @Inject(method = "tick", at = @At("TAIL"))
     private void onTick(CallbackInfo ci) {
@@ -27,7 +27,6 @@ public abstract class AttackMixing {
 
         // Kiểm tra nếu tìm thấy bùa và người chơi có bùa đó
         if (enchantmentWhirlwindEntry.isPresent() && EnchantmentHelper.getLevel(enchantmentWhirlwindEntry.get(), stack) > 0) {
-
             if (player.handSwingProgress > 0 && !player.getItemCooldownManager().isCoolingDown(stack.getItem())) {
                 WhirlwindEffect.whirlwindAnimation(player, player.getWorld());
                 WhirlwindDamage.whirlwindDamage(player);
@@ -35,4 +34,6 @@ public abstract class AttackMixing {
             }
         }
     }
+
+
 }

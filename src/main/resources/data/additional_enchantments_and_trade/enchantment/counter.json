@@ -1,8 +1,8 @@
 {
   "description": {
-    "translate": "enchantment.additional_enchanments_and_trade.whirwind"
+    "translate": "enchantment.additional_enchantments_and_trade.counter"
   },
-  "supported_items": "#minecraft:enchantable/spear",
+  "supported_items": "#minecraft:enchantable/shield",
   "weight": 2,
   "max_level": 1,
   "min_cost": {
@@ -19,6 +19,7 @@
   },
   "anvil_cost": 6,
   "slots": [
-    "mainhand"
+    "mainhand",
+    "offhand"
   ]
 }

@@ -1,4 +1,4 @@
-package com.github.trungkien14.additional_enchanments_and_trade.util.whirlwind;
+package com.github.trungkien14.additional_enchantments_and_trade.util.spear.whirlwind;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;

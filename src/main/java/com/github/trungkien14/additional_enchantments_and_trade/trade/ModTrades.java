@@ -1,6 +1,6 @@
-package com.github.trungkien14.additional_enchanments_and_trade.trade;
+package com.github.trungkien14.additional_enchantments_and_trade.trade;
 
-import com.github.trungkien14.additional_enchanments_and_trade.enchantment.ModEnchantments;
+import com.github.trungkien14.additional_enchantments_and_trade.enchantment.ModEnchantments;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.ItemEnchantmentsComponent;

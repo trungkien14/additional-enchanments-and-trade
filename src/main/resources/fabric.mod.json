@@ -1,31 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "additional_enchanments_and_trade",
+  "id": "additional_enchantments_and_trade",
   "version": "${version}",
-  "name": "Additional Enchanments and Trade",
+  "name": "Additional enchantments and Trade",
   "description": "",
   "authors": [],
   "contact": {},
   "license": "All-Rights-Reserved",
-  "icon": "assets/additional_enchanments_and_trade/icon.png",
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "com.github.trungkien14.additional_enchanments_and_trade.client.Additional_enchanments_and_tradeDataGenerator"
+      "com.github.trungkien14.additional_enchantments_and_trade.client.Additional_enchantments_and_tradeDataGenerator"
     ],
     "client": [
-      "com.github.trungkien14.additional_enchanments_and_trade.client.Additional_enchanments_and_tradeClient"
+      "com.github.trungkien14.additional_enchantments_and_trade.client.Additional_enchantments_and_tradeClient"
     ],
     "main": [
-      "com.github.trungkien14.additional_enchanments_and_trade.Additional_enchanments_and_trade"
+      "com.github.trungkien14.additional_enchantments_and_trade.Additional_enchantments_and_trade"
     ]
   },
   "mixins": [
-    "additional_enchanments_and_trade.mixins.json",
-    {
-      "config": "additional_enchanments_and_trade.client.mixins.json",
-      "environment": "client"
-    }
+    "additional_enchantments_and_trade.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",

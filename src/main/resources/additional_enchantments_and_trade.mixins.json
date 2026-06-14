@@ -1,10 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.github.trungkien14.additional_enchanments_and_trade.mixin",
+  "package": "com.github.trungkien14.additional_enchantments_and_trade.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "AttackMixing"
+    "WhirlwindAttackMixing",
+    "CounterMixing"
   ],
   "injectors": {
     "defaultRequire": 1
