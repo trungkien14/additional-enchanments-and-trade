@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.additional_enchantments_and_trade.whirwind"
   },
-  "supported_items": "#minecraft:enchantable/sword",
+  "supported_items": "#minecraft:enchantable/spear",
   "weight": 2,
   "max_level": 1,
   "min_cost": {

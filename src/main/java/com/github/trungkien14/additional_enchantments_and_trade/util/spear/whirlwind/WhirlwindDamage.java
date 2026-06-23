@@ -14,7 +14,7 @@ public class WhirlwindDamage {
         ItemStack spear = player.getMainHandStack();
 
         if (!spear.isEmpty() && spear.isDamageable()) {
-            spear.damage(100,player, EquipmentSlot.MAINHAND);
+            spear.damage(55,player, EquipmentSlot.MAINHAND);
         }
 
         Box area = player.getBoundingBox().expand(4.D, 2.0D, 4.0D);
